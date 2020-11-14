@@ -202,13 +202,13 @@ public abstract class BaseView extends View implements View.OnClickListener, Vie
 
         mCurDayTextPaint.setAntiAlias(true);
         mCurDayTextPaint.setTextAlign(Paint.Align.CENTER);
-        mCurDayTextPaint.setColor(Color.RED);
-        mCurDayTextPaint.setFakeBoldText(true);
+//        mCurDayTextPaint.setColor(Color.RED);
+//        mCurDayTextPaint.setFakeBoldText(true);
         mCurDayTextPaint.setTextSize(CalendarUtil.dipToPx(context, TEXT_SIZE));
 
         mCurDayLunarTextPaint.setAntiAlias(true);
         mCurDayLunarTextPaint.setTextAlign(Paint.Align.CENTER);
-        mCurDayLunarTextPaint.setColor(Color.RED);
+//        mCurDayLunarTextPaint.setColor(Color.RED);
         mCurDayLunarTextPaint.setFakeBoldText(true);
         mCurDayLunarTextPaint.setTextSize(CalendarUtil.dipToPx(context, TEXT_SIZE));
 
@@ -228,7 +228,7 @@ public abstract class BaseView extends View implements View.OnClickListener, Vie
     void setup(CalendarViewDelegate delegate) {
         this.mDelegate = delegate;
 
-        this.mCurDayTextPaint.setColor(delegate.getCurDayTextColor());
+//        this.mCurDayTextPaint.setColor(delegate.getCurDayTextColor());
         this.mCurDayLunarTextPaint.setColor(delegate.getCurDayLunarTextColor());
         this.mCurMonthTextPaint.setColor(delegate.getCurrentMonthTextColor());
         this.mOtherMonthTextPaint.setColor(delegate.getOtherMonthTextColor());
